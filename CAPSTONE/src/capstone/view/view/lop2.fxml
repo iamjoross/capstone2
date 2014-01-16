@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="200.0" prefHeight="200.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="capstone.view.Lop2Controller">
+  <children>
+    <Button fx:id="a" layoutX="57.0" layoutY="80.0" mnemonicParsing="false" onAction="#handle" text="Button" />
+    <TextField fx:id="txt" layoutX="242.0" layoutY="141.0" prefWidth="200.0" />
+    <Button fx:id="b" layoutX="159.0" layoutY="80.0" mnemonicParsing="false" text="Button" />
+  </children>
+</AnchorPane>

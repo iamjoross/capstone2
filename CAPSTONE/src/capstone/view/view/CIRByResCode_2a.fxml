@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane id="StackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" styleClass="normalBg" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+        <AnchorPane prefHeight="474.0" prefWidth="1200.0" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <AnchorPane prefHeight="45.0" prefWidth="1200.0" style="-fx-background-color:rgba(0,0,0,0.3)" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <Label text="HOTEL EXPRESS KIOSK" textFill="#99a9ff" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="15.0">
+                  <effect>
+                    <Bloom />
+                  </effect>
+                  <font>
+                    <Font name="System Bold Italic" size="15.0" />
+                  </font>
+                </Label>
+                <Label text="Thursday, 7 September 2013  09:00 am" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="14.0">
+                  <effect>
+                    <Bloom />
+                  </effect>
+                  <font>
+                    <Font name="System Bold" size="15.0" />
+                  </font>
+                  <textFill>
+                    <Color blue="1.000" green="0.663" red="0.600" fx:id="x2" />
+                  </textFill>
+                </Label>
+              </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="429.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+              <children>
+                <AnchorPane prefHeight="333.0" prefWidth="305.0" styleClass="infoPane" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="14.0">
+                  <children>
+                    <Label layoutX="0.0" layoutY="0.0" prefHeight="61.0" prefWidth="305.0" styleClass="h2, header" text="Personal Details">
+                      <textFill>
+                        <Color blue="0.161" green="0.161" red="0.161" fx:id="x1" />
+                      </textFill>
+                    </Label>
+                    <AnchorPane id="AnchorPane" layoutX="9.0" layoutY="68.0" prefHeight="256.0" prefWidth="296.0">
+                      <children>
+                        <Label layoutX="0.0" layoutY="24.0" styleClass="h3Label" text="Name:" textFill="BLACK" />
+                        <Label layoutX="49.0" layoutY="55.0" prefHeight="26.0" prefWidth="202.0" styleClass="h3Txt" text="Label">
+                          <stylesheets>
+                            <URL value="@../style/mainscreen.css" />
+                          </stylesheets>
+                        </Label>
+                        <Button layoutX="256.0" layoutY="58.0" mnemonicParsing="false" prefWidth="28.0" text="Button" />
+                        <HBox id="HBox" alignment="CENTER" layoutX="0.0" layoutY="55.0" spacing="5.0" />
+                        <Label layoutX="0.0" layoutY="158.0" prefHeight="31.0" prefWidth="154.0" styleClass="h3Label" text="Phone Number:" textFill="BLACK" wrapText="true" />
+                        <Label layoutX="49.0" layoutY="197.0" prefHeight="26.0" prefWidth="202.0" styleClass="h3Txt" text="Label">
+                          <stylesheets>
+                            <URL value="@../style/mainscreen.css" />
+                          </stylesheets>
+                        </Label>
+                        <Button layoutX="256.0" layoutY="200.0" minWidth="23.0" mnemonicParsing="false" prefWidth="29.0" text="Button" />
+                        <Label layoutX="49.0" layoutY="128.0" prefHeight="26.0" prefWidth="202.0" styleClass="h3Txt" text="Label">
+                          <stylesheets>
+                            <URL value="@../style/mainscreen.css" />
+                          </stylesheets>
+                        </Label>
+                        <Button layoutX="256.0" layoutY="133.0" mnemonicParsing="false" prefWidth="28.0" text="Button" />
+                        <Label layoutX="2.0" layoutY="94.0" prefWidth="58.0" styleClass="h3Label" text="Email:" textFill="BLACK" />
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="401.0" prefWidth="421.0" styleClass="infoPane" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="379.0" AnchorPane.topAnchor="14.0">
+                  <children>
+                    <Label prefHeight="61.0" prefWidth="421.0" styleClass="h2, header" text="Room Preference" textFill="$x1" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    <ImageView fitHeight="138.7499850273154" fitWidth="184.99998474121094" opacity="1.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: red;" AnchorPane.bottomAnchor="187.25" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="221.0" AnchorPane.topAnchor="76.0" />
+                    <AnchorPane minHeight="139.75" prefHeight="139.75" prefWidth="193.0" style="-fx-background-color: red;" AnchorPane.bottomAnchor="187.25" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="75.0">
+                      <children>
+                        <Label alignment="CENTER" prefWidth="124.0" text="Details about the room" textAlignment="CENTER" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                      </children>
+                    </AnchorPane>
+                    <Label prefWidth="136.0" text="click pic to change room" AnchorPane.bottomAnchor="154.0" AnchorPane.leftAnchor="39.5" AnchorPane.rightAnchor="245.5" AnchorPane.topAnchor="232.0" />
+                    <AnchorPane id="AnchorPane" prefHeight="119.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="18.0">
+                      <children>
+                        <Label layoutX="0.0" prefWidth="145.0" styleClass="h3Label" text="Selected dates:" AnchorPane.bottomAnchor="92.0" />
+                        <AnchorPane id="AnchorPane" prefHeight="26.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="0.0">
+                          <children>
+                            <Label prefHeight="23.0" prefWidth="280.0" styleClass="h3Txt" text="from day , date month year" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="53.0">
+                              <stylesheets>
+                                <URL value="@../style/mainscreen.css" />
+                              </stylesheets>
+                            </Label>
+                            <Label layoutY="5.0" text="through" AnchorPane.rightAnchor="0.0">
+                              <font>
+                                <Font name="Arial" size="14.0" />
+                              </font>
+                            </Label>
+                          </children>
+                        </AnchorPane>
+                        <Label prefHeight="23.0" prefWidth="280.0" styleClass="h3Txt" text="day , date month year" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="53.0">
+                          <stylesheets>
+                            <URL value="@../style/mainscreen.css" />
+                          </stylesheets>
+                        </Label>
+                        <Label prefWidth="280.0" text="(no. of nights)" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="53.0">
+                          <font>
+                            <Font name="Arial Italic" size="14.0" />
+                          </font>
+                        </Label>
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="333.0" prefWidth="304.0" styleClass="infoPane" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="14.0">
+                  <children>
+                    <Label prefHeight="373.0" prefWidth="276.0" styleClass="h2" text="WELCOME NAME!&#10;We have listed here your reservation details.&#10;If you wish to change the information, press the button" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                  </children>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+          </children>
+        </AnchorPane>
+        <AnchorPane id="a" prefHeight="126.0" prefWidth="1200.0" style="-fx-background-color:rgba(0,0,0,0.3)" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+          <children>
+            <Button id="dark-blue" mnemonicParsing="false" onAction="#goBack" prefHeight="80.0" prefWidth="200.0" text="back" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="24.0" />
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="127.0" prefWidth="335.0" text="Check in&#10;with reservation code" textAlignment="CENTER" textFill="$x2" wrapText="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="345.0" AnchorPane.rightAnchor="344.0" AnchorPane.topAnchor="0.0">
+              <effect>
+                <Bloom threshold="0.08518518518518517" />
+              </effect>
+              <font>
+                <Font name="Arial" size="30.0" />
+              </font>
+            </Label>
+            <Button id="dark-blue" mnemonicParsing="false" onAction="#goToByQR" prefHeight="80.0" prefWidth="200.0" text="submit" AnchorPane.bottomAnchor="23.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="23.0" />
+          </children>
+        </AnchorPane>
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@../style/mainscreen.css" />
+    <URL value="@../style/buttons.css" />
+  </stylesheets>
+</StackPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" mouseTransparent="false" prefHeight="300.0" prefWidth="1024.0" styleClass="keyboard" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="capstone.view.KeyboardController">
+  <children>
+    <TextField id="" fx:id="inputTxt" layoutX="512.0" layoutY="150.0" prefWidth="200.0" visible="false" />
+    <AnchorPane id="AnchorPane" layoutX="0.0" layoutY="6.0" prefHeight="285.0" style="">
+      <children>
+        <HBox id="HBox" alignment="CENTER" disable="false" layoutY="11.0" spacing="5.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="171.0">
+          <children>
+            <Button fx:id="one" alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="1" textAlignment="LEFT" textFill="GREY" />
+            <Button fx:id="two" alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="2" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="3" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="4" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="5" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="6" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="7" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="8" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="9" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="0" textAlignment="LEFT" textFill="GREY" />
+          </children>
+        </HBox>
+        <HBox id="HBox" alignment="CENTER" layoutY="81.0" spacing="5.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="171.0">
+          <children>
+            <Button fx:id="q" alignment="CENTER" mnemonicParsing="false" onAction="#handlePressedKey" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="q" textAlignment="LEFT" textFill="GREY" />
+            <Button fx:id="w" alignment="CENTER" mnemonicParsing="false" onAction="#handlePressedKey" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="w" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="e" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="t" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="t" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="u" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="u" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="i" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="o" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="p" textAlignment="LEFT" textFill="GREY" />
+          </children>
+        </HBox>
+        <HBox id="HBox" alignment="CENTER" layoutY="151.0" spacing="5.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="171.0">
+          <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="a" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="s" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="d" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="f" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="g" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="h" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="j" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="k" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="l" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="l" textAlignment="LEFT" textFill="GREY" />
+          </children>
+        </HBox>
+        <HBox id="HBox" alignment="CENTER" layoutY="221.0" spacing="5.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="38.0">
+          <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="z" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="x" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="c" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="v" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="b" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="n" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="70.0" styleClass="key" text="m" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="353.0" styleClass="key" text="space" textAlignment="LEFT" textFill="GREY" />
+          </children>
+        </HBox>
+        <VBox id="VBox" alignment="CENTER" layoutY="11.0" prefHeight="199.99990000000253" spacing="12.0" AnchorPane.leftAnchor="858.0" AnchorPane.rightAnchor="38.0">
+          <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="128.0" styleClass="key, fitText" text="backspace" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" maxWidth="128.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="128.0" styleClass="key" text="enter" textAlignment="LEFT" textFill="GREY" />
+          </children>
+        </VBox>
+        <VBox id="VBox" alignment="CENTER" layoutY="11.0" spacing="11.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="921.0">
+          <children>
+            <Button id="esc" alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="99.0" styleClass="key" text="esc" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="99.0" styleClass="key" text="SHIFT" textAlignment="LEFT" textFill="GREY" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="130.0" prefWidth="99.0" styleClass="key, fitText" text="UPPERCASE" textAlignment="LEFT" textFill="GREY" wrapText="true" />
+          </children>
+        </VBox>
+      </children>
+      <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@../style/keyboardStyle.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1024.0" styleClass="mainMenu" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="capstone.view.MainMenuController">
+  <children>
+    <TabPane id="tab" prefHeight="270.0" prefWidth="374.0" side="TOP" styleClass="floating" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="206.0" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="24.0">
+      <stylesheets>
+        <URL value="@mainscreen.css" />
+      </stylesheets>
+      <tabs>
+        <Tab disable="true" text="-">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+        <Tab text="News">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="273.0" prefWidth="374.0">
+              <children>
+                <Label id="Title" fx:id="title" layoutX="14.0" layoutY="14.0" prefHeight="42.0" prefWidth="346.0" text="Titles" textOverrun="CLIP" wrapText="true">
+                  <font>
+                    <Font name="System Bold" size="14.0" />
+                  </font>
+                </Label>
+                <Label id="Title" fx:id="content" prefHeight="113.5" prefWidth="346.0" text="Title" textOverrun="ELLIPSIS" wrapText="true" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="66.5">
+                  <font>
+                    <Font size="12.0" />
+                  </font>
+                </Label>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Money">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+        <Tab text="Life">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+        <Tab text="Sports">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <AnchorPane prefHeight="354.0" prefWidth="486.0" style="" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="486.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="24.0">
+      <children>
+        <AnchorPane id="ad-top" prefHeight="284.0" prefWidth="486.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <Label prefHeight="67.0" prefWidth="313.0" style="-fx-font-smoothing: lcd;" text="Ads Go Here" AnchorPane.bottomAnchor="121.0" AnchorPane.leftAnchor="87.0" AnchorPane.rightAnchor="86.0" AnchorPane.topAnchor="96.0">
+              <font>
+                <Font name="System Bold" size="50.0" />
+              </font>
+            </Label>
+          </children>
+        </AnchorPane>
+        <AnchorPane id="ad-bot" prefHeight="70.0" prefWidth="486.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      </children>
+    </AnchorPane>
+    <GridPane hgap="10.0" prefHeight="90.0" prefWidth="486.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="486.0" AnchorPane.rightAnchor="52.0">
+      <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <children>
+            <Button id="dark-blue" fx:id="button" mnemonicParsing="false" onAction="#goToCheckIn" prefHeight="90.0" prefWidth="156.0" text="CHECK&#10;IN" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <stylesheets>
+                <URL value="@../style/buttons.css" />
+              </stylesheets>
+            </Button>
+          </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <children>
+            <Button id="dark-blue" fx:id="button" mnemonicParsing="false" onAction="#goToCheckOut" prefHeight="90.0" prefWidth="155.0" text="CHECK OUT" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <stylesheets>
+                <URL value="@../style/buttons.css" />
+              </stylesheets>
+            </Button>
+          </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0">
+          <children>
+            <Button id="dark-blue" fx:id="button" contentDisplay="CENTER" defaultButton="false" mnemonicParsing="false" onAction="#goToUnderCons" opacity="1.0" prefHeight="90.0" prefWidth="155.0" text="OTHER &#10;SERVICES" textAlignment="CENTER" textOverrun="ELLIPSIS" underline="false" wrapText="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+              <stylesheets>
+                <URL value="@../style/buttons.css" />
+              </stylesheets>
+            </Button>
+          </children>
+        </AnchorPane>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+  <stylesheets>
+    <URL value="@../style/mainscreen.css" />
+  </stylesheets>
+</AnchorPane>
