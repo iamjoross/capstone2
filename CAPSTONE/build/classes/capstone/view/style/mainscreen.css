@@ -12,21 +12,17 @@
 }
 .pane{
     -fx-background-image: url("../../../resources/bg.jpg");
-
     -fx-background-size:100%;
     -fx-background-repeat: stretch; 
     -fx-background-position:center center;
-
-
 }
 #yahooLogo{
     -fx-opacity: 1;
- -fx-background-image: url("../../../resources/yahoo.jpeg");
- -fx-background-size:100%;
+    -fx-background-image: url("../../../resources/yahoo.jpeg");
+    -fx-background-size:100%;
     -fx-background-repeat: stretch; 
     -fx-background-position:center center;
 }
-
 .tab:disabled{
     -fx-text-fill: transparent;
 }
@@ -35,8 +31,6 @@
     -fx-background-size:100%;
     -fx-background-repeat: stretch; 
     -fx-background-position:center center;
-
-
 }
 .mainMenu{
     -fx-background-image: url("../../../resources/bg3.jpg");
@@ -49,61 +43,92 @@
     visibility: false;
     -fx-opacity: 0;
 }
+.tab:disabled:top{
+    -fx-opacity : 1;
+    -fx-background-image: url("../../../resources/yahoo2.jpg");
+     -fx-background-size:100%;
+    -fx-background-repeat: stretch; 
+    -fx-background-position:center center;
+    -fx-text-fill:transparent;
+}
+.tab:disabled:top .tab-label .text{
+    -fx-opacity : 0;
+    
+}
+.time{
+    -fx-background-color:
+    linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+    linear-gradient(#020b02, #3a3a3a),
+    linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+    linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+    linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+}
 
 #ad{
     -fx-border-radius: 5 5 5 5;
-  -fx-background-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
 }
 #ad-top{
     -fx-border-radius: 5 5 0 0;
-  -fx-background-radius: 5 5 0 0;
-     -fx-background-color: rgba(255,255,255,0.2)
+    -fx-background-radius: 5 5 0 0;
+    -fx-background-color: rgba(255,255,255,0.1)
 }
 #ad-bot{
     -fx-border-radius: 0 0 5 5;
-  -fx-background-radius: 0 0 5 5;
-   -fx-background-color: rgba(0,0,0,0.7);
+    -fx-background-radius: 0 0 5 5;
+    -fx-background-color: rgba(0,0,0,0.7);
 }
 #Content{
-    
+   
 }
-
-
 .tab {
--fx-padding: 9px;
--fx-margin: 0;
--fx-background-color: transparent;
--fx-text-fill: white;
-
+    -fx-padding: 9px;
+    -fx-margin: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
 }
 .tab:selected {
-   -fx-border-color: transparent;
--fx-background-color: rgba(255,255,255,0.3);
+    -fx-border-color: transparent;
+    -fx-background-color: rgba(255,255,255,0.3);
 }
-
 .tab *.tab-label {
     -fx-background-color: transparent;
     -fx-text-alignment: right;
     -fx-text-fill: white;
-    -fx-font-size: 15px ;
+    -fx-font-size: 13px ;
     -fx-font-family: "Arial Black";
     -fx-padding: 0px;
     -fx-border-color: transparent;
 }
 
 
-.tab-label.text{
-    
-}
 .tab-content-area{
-     
-        -fx-background-color: rgba(255,255,255,0.2);
+-fx-border-radius: 0 0 5 5;
+    -fx-background-radius: 0 0 5 5;
+    -fx-background-color: rgba(255,255,255,0.1);
 
+}.tab-header-background{
+     -fx-background-color:
+    linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+    linear-gradient(#020b02, #3a3a3a),
+    linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+    linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+    linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+     
+}
+.tab:top:selected{
+    -fx-background-insets: 0;
+    -fx-border-radius: 0 ;
+    -fx-background-radius: 0 ;
+     -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
 }
 .tab-header-area{
     -fx-border-radius: 5 5 0 0 ;
-  -fx-background-radius: 5 5 0 0 ;
-  -fx-background-color: rgba(0,0,0,0.7);
+    -fx-background-radius: 5 5 0 0 ;
+    -fx-background-color: rgba(0,0,0,0.7);
+    -fx-padding: 0;
 }
 #statusContainer {
     -fx-background-color: -fx-color;
@@ -111,14 +136,14 @@
 
 .infoPane{
     -fx-border-radius:5;
-  -fx-background-radius:5;
-     -fx-background-color: rgba(255,255,255,0.2)
+    -fx-background-radius:5;
+    -fx-background-color: rgba(255,255,255,0.1)
 }
 .h2{
     -fx-font-size:20;
     -fx-alignment: center;
     -fx-font-weight: bold;
-   -fx-text-fill: black;
+    -fx-text-fill: black;
 }
 
 .h3Label{
@@ -130,7 +155,7 @@
 
 .h3Txt{
     -fx-font-size:16;
-    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-color: rgba(255,255,255,0.9);
     -fx-padding: 2;
     -fx-text-fill: black;
 }
@@ -142,7 +167,26 @@
 }
 .header{
     -fx-border-radius: 5 5 0 0 ;
-  -fx-background-radius: 5 5 0 0 ;
+    -fx-background-radius: 5 5 0 0 ;
     -fx-background-color: rgba(0,0,0,0.8);
     -fx-text-fill: white;
+}
+
+.infoPane{
+
+    -fx-background-color:
+        linear-gradient(rgba(104,104,104,0.1) 0%, rgba(35,39,35,0.1) 25%, rgba(55,56,55,0.1) 75%, rgba(117,117,117,0.1) 100%),
+        linear-gradient(rgba(2,11,2,0.1), rgba(58,58,58,0.1)),
+        linear-gradient(rgba(157,157,157,0.1) 0%, rgba(107,106,107,0.1) 20%, rgba(52,53,52,0.1) 80%, rgba(36,36,36,0.1) 100%),
+        linear-gradient(rgba(138,138,138,0.1) 0%, rgba(107,106,107,0.1) 20%, rgba(52,53,52,0.1) 80%, rgba(38,38,38,0.1) 100%);
+
+}
+
+#roomImage{
+    -fx-image:url("../../../resources/bg.jpg");
+}
+
+#paneOnImage{
+
+    -fx-background-color: rgba(255,0,255,0.3);  
 }

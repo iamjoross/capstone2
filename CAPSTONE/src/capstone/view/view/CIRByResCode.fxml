@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane id="StackPane" prefHeight="500.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="capstone.view.CIRByResCodeController">
+  <children>
+    <AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="200.0" styleClass="normalBg">
+      <children>
+        <AnchorPane focusTraversable="true" layoutX="0.0" layoutY="0.0" onMouseClicked="#toggleStatusMouse" prefHeight="374.0" prefWidth="1024.0">
+          <children>
+            <VBox id="VBox" alignment="CENTER" layoutX="305.0" layoutY="124.0" prefHeight="126.0" spacing="20.0">
+              <children>
+                <Label text="RESERVATION CODE">
+                  <font>
+                    <Font name="Arial" size="40.0" />
+                  </font>
+                </Label>
+                <TextField fx:id="resCodeTxt" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#toggleStatus" onMouseClicked="#toggleStatusMouse" prefHeight="39.0" prefWidth="345.0" promptText="input reservation code here" VBox.vgrow="NEVER" />
+              </children>
+            </VBox>
+            <Button layoutX="158.0" layoutY="135.0" mnemonicParsing="false" onAction="#toggleStatus" text="Buttonq" />
+          </children>
+        </AnchorPane>
+        <AnchorPane id="a" layoutX="0.0" layoutY="374.0" prefHeight="126.0" prefWidth="1024.0" style="-fx-background-color:rgba(0,0,0,0.3)">
+          <children>
+            <Button id="dark-blue" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#goBack" prefHeight="80.0" prefWidth="200.0" text="back" textAlignment="CENTER" wrapText="true" />
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="345.0" layoutY="0.0" prefHeight="127.0" prefWidth="335.0" text="Check in&#10;with reservation code" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+              <font>
+                <Font name="Arial" size="30.0" />
+              </font>
+            </Label>
+            <Button id="dark-blue" layoutX="810.0" layoutY="32.0" mnemonicParsing="false" onAction="#goToByQR" prefHeight="80.0" prefWidth="200.0" text="submit" />
+          </children>
+        </AnchorPane>
+      </children>
+      <stylesheets>
+        <URL value="@../style/mainscreen.css" />
+        <URL value="@../style/buttons.css" />
+      </stylesheets>
+    </AnchorPane>
+    <VBox fx:id="statusContainer" maxHeight="300.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="300.0" prefWidth="-1.0" style="-fx-background-color: red;" translateY="300.0" StackPane.alignment="BOTTOM_LEFT">
+      <children>
+        <fx:include fx:id="keyboard" source="keyboard.fxml" />
+      </children>
+    </VBox>
+  </children>
+</StackPane>

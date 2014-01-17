@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane id="StackPane" depthTest="INHERIT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#onHover" prefHeight="700.0" prefWidth="1200.0" styleClass="normalBg" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="capstone.view.CIRByResCode_2aController">
+  <children>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+        <AnchorPane prefHeight="601.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <AnchorPane prefHeight="76.0" prefWidth="1200.0" style="" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <Label alignment="CENTER" contentDisplay="TOP" prefHeight="57.0" prefWidth="133.0" text="LOGO" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="11.0">
+                  <font>
+                    <Font name="System Bold Italic" size="22.0" />
+                  </font>
+                </Label>
+                <Group id="Group" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="11.0">
+                  <children>
+                    <HBox id="HBox" alignment="CENTER" layoutX="0.0" layoutY="24.0" spacing="5.0">
+                      <children>
+                        <Label prefHeight="30.0" text="Monday," textFill="WHITE">
+                          <font>
+                            <Font name="System Bold" size="18.0" fx:id="x1" />
+                          </font>
+                        </Label>
+                        <Label font="$x1" text="7 September 2013" textFill="#ffd466" />
+                      </children>
+                    </HBox>
+                    <Label layoutX="139.0" layoutY="0.0" prefHeight="30.0" text="09:00 am" textFill="WHITE">
+                      <font>
+                        <Font name="System Bold" size="22.0" />
+                      </font>
+                    </Label>
+                  </children>
+                </Group>
+              </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="524.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="76.0">
+              <children>
+                <StackPane id="StackPane" AnchorPane.bottomAnchor="167.0" AnchorPane.leftAnchor="166.0" AnchorPane.topAnchor="36.0">
+                  <children>
+                    <AnchorPane id="AnchorPane">
+                      <children>
+                        <ImageView id="roomImage" fitHeight="421.0" fitWidth="526.0" onMouseEntered="#onHover" onMouseExited="#onOut" pickOnBounds="true" preserveRatio="false" smooth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <AnchorPane id="AnchorPane" layoutX="0.0" layoutY="0.0" prefHeight="41.000099999997474" prefWidth="526.0" style="-fx-background-color: rgba(255,255,255,0.2)">
+                          <children>
+                            <Label layoutX="14.0" layoutY="14.0" text="Room Deluxe B" textFill="WHITE">
+                              <font>
+                                <Font name="Arial Bold" size="18.0" />
+                              </font>
+                            </Label>
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane id="pane" fx:id="paneOnImage" layoutX="0.0" layoutY="327.0" opacity="0.58" prefHeight="94.0" prefWidth="526.0" style="-fx-background-color: white;" visible="false">
+                          <children>
+                            <Label layoutX="59.0" layoutY="31.0" text="Room Info" />
+                          </children>
+                        </AnchorPane>
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </StackPane>
+                <AnchorPane prefHeight="421.0" prefWidth="304.0" styleClass="infoPane" AnchorPane.leftAnchor="711.0" AnchorPane.rightAnchor="185.0" AnchorPane.topAnchor="36.0">
+                  <children>
+                    <Label layoutY="105.0" styleClass="h3Label" text="Name:" AnchorPane.leftAnchor="22.0" />
+                    <Label layoutY="103.0" prefWidth="129.0" styleClass="h3Txt" text="name of guest" AnchorPane.leftAnchor="87.5" AnchorPane.rightAnchor="87.5" />
+                    <Label layoutY="147.0" styleClass="h3Label" text="Contact Number:" AnchorPane.leftAnchor="22.0" />
+                    <Label layoutY="177.0" prefWidth="133.0" styleClass="h3Txt" text="09 bla bla" AnchorPane.leftAnchor="87.5" AnchorPane.rightAnchor="83.5" />
+                    <Label layoutY="221.0" styleClass="h3Label" text="Selected Dates:" AnchorPane.leftAnchor="22.0" />
+                    <Label layoutY="247.0" prefWidth="133.0" styleClass="h3Txt" text="check in date" AnchorPane.leftAnchor="87.5" AnchorPane.rightAnchor="83.5" />
+                    <Label layoutY="293.0" prefWidth="44.0" text="through" AnchorPane.leftAnchor="25.0" />
+                    <Label layoutY="288.0" prefWidth="133.00009999999747" styleClass="h3Txt" text="check out date" AnchorPane.leftAnchor="86.5" AnchorPane.rightAnchor="84.5" />
+                    <Button layoutY="291.0" mnemonicParsing="false" prefWidth="28.0" text="Button" AnchorPane.rightAnchor="34.0" />
+                    <Label layoutY="331.0" prefWidth="210.0" text="(no. of nights)" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="18.0">
+                      <font>
+                        <Font name="Arial Italic" size="14.0" />
+                      </font>
+                    </Label>
+                    <Label alignment="CENTER" prefHeight="61.0" prefWidth="304.0" styleClass="header, h2" text="Guest Folio" textFill="#292929" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+                <AnchorPane id="a" prefHeight="126.0" prefWidth="1208.0" style="-fx-background-color:rgba(0,0,0,0.3)" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <children>
+                    <Button id="dark-blue" mnemonicParsing="false" onAction="#goBack" prefHeight="80.0" prefWidth="200.0" text="back" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="24.0" />
+                    <Label alignment="CENTER" contentDisplay="TOP" prefHeight="127.0" prefWidth="335.0" text="Check in&#10;with reservation code" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="345.0" AnchorPane.rightAnchor="344.0" AnchorPane.topAnchor="0.0">
+                      <font>
+                        <Font name="Arial" size="30.0" />
+                      </font>
+                    </Label>
+                    <Button id="dark-blue" mnemonicParsing="false" onAction="#goToByQR" prefHeight="80.0" prefWidth="200.0" text="submit" AnchorPane.bottomAnchor="23.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="23.0" />
+                  </children>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+          </children>
+        </AnchorPane>
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@../style/mainscreen.css" />
+    <URL value="@../style/buttons.css" />
+  </stylesheets>
+</StackPane>

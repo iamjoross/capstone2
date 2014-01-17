@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" onMouseClicked="#goToCheckIn" prefHeight="500.0" prefWidth="1024.0" styleClass="pane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="capstone.view.MainScreenController">
+<AnchorPane id="AnchorPane" onMouseClicked="#goToCheckIn" prefHeight="700.0" prefWidth="1200.0" styleClass="pane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="capstone.view.MainScreenController">
   <children>
     <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" focusTraversable="true" prefWidth="296.0" text="TAP TO CONTINUE" textAlignment="CENTER" textFill="#002133" textOverrun="ELLIPSIS" underline="false" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="364.0" AnchorPane.rightAnchor="364.0">
       <font>

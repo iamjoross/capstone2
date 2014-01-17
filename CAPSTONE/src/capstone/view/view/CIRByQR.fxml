@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1024.0" styleClass="underConstruction" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="capstone.view.CIRByQRController">
+  <children>
+    <Button id="dark-blue" mnemonicParsing="false" onAction="#goBack" text="BACK" AnchorPane.bottomAnchor="242.0" AnchorPane.leftAnchor="679.0" AnchorPane.rightAnchor="247.0" AnchorPane.topAnchor="215.0" />
+  </children>
+  <stylesheets>
+    <URL value="@../style/mainscreen.css" />
+    <URL value="@../style/buttons.css" />
+  </stylesheets>
+</AnchorPane>

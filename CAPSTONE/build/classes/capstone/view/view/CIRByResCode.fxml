@@ -12,7 +12,7 @@
   <children>
     <AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="200.0" styleClass="normalBg">
       <children>
-        <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="374.0" prefWidth="1024.0">
+        <AnchorPane focusTraversable="true" layoutX="0.0" layoutY="0.0" onMouseClicked="#toggleStatusMouse" prefHeight="374.0" prefWidth="1024.0">
           <children>
             <VBox id="VBox" alignment="CENTER" layoutX="305.0" layoutY="124.0" prefHeight="126.0" spacing="20.0">
               <children>
@@ -21,7 +21,7 @@
                     <Font name="Arial" size="40.0" />
                   </font>
                 </Label>
-                <TextField fx:id="resCodeTxt" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#toggleStatus" prefHeight="39.0" prefWidth="345.0" promptText="input reservation code here" VBox.vgrow="NEVER" />
+                <TextField fx:id="resCodeTxt" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#toggleStatus" onMouseClicked="#toggleStatusMouse" prefHeight="39.0" prefWidth="345.0" promptText="input reservation code here" VBox.vgrow="NEVER" />
               </children>
             </VBox>
             <Button layoutX="158.0" layoutY="135.0" mnemonicParsing="false" onAction="#toggleStatus" text="Buttonq" />

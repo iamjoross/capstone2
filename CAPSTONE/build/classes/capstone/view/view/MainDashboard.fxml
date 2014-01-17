@@ -7,31 +7,32 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1024.0" styleClass="mainMenu" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="capstone.view.MainMenuController">
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" styleClass="normalBg" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="capstone.view.MainMenuController">
   <children>
-    <TabPane id="tab" prefHeight="270.0" prefWidth="374.0" side="TOP" styleClass="floating" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="206.0" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="24.0">
+    <TabPane id="tab" fx:id="tabPane" prefHeight="267.0" prefWidth="374.0" rotateGraphic="false" side="TOP" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="266.0">
       <stylesheets>
-        <URL value="@mainscreen.css" />
+        <URL value="@../style/mainscreen.css" />
       </stylesheets>
       <tabs>
-        <Tab disable="true" text="-">
+        <Tab id="icon" disable="true" text="aaaaaaaa">
           <content>
-            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="263.0000999999975" prefWidth="374.0" />
           </content>
         </Tab>
-        <Tab text="News">
+        <Tab fx:id="newsTab" text="News">
           <content>
-            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="273.0" prefWidth="374.0">
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="447.0" prefWidth="374.0">
               <children>
-                <Label id="Title" fx:id="title" layoutX="14.0" layoutY="14.0" prefHeight="42.0" prefWidth="346.0" text="Titles" textOverrun="CLIP" wrapText="true">
+                <Label id="Title" fx:id="title" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="100.0" prefWidth="346.0" text="TitlesTitlesTitlesT&#10;itlesTitles" textAlignment="JUSTIFY" textFill="BLACK" textOverrun="ELLIPSIS" wrapText="true">
                   <font>
-                    <Font name="System Bold" size="14.0" />
+                    <Font name="Arial Bold" size="27.0" />
                   </font>
                 </Label>
-                <Label id="Title" fx:id="content" prefHeight="113.5" prefWidth="346.0" text="Title" textOverrun="ELLIPSIS" wrapText="true" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="66.5">
+                <Label id="Title" fx:id="content" alignment="TOP_LEFT" prefHeight="90.0" prefWidth="346.0" text="Title" textAlignment="JUSTIFY" textOverrun="ELLIPSIS" wrapText="true" AnchorPane.bottomAnchor="40.5" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="130.5">
                   <font>
-                    <Font size="12.0" />
+                    <Font name="Arial" size="18.0" />
                   </font>
                 </Label>
               </children>
@@ -64,6 +65,7 @@
                 <Font name="System Bold" size="50.0" />
               </font>
             </Label>
+            <WebView fx:id="web" layoutX="50.0" layoutY="278.0" prefHeight="164.0" prefWidth="494.0" />
           </children>
         </AnchorPane>
         <AnchorPane id="ad-bot" prefHeight="70.0" prefWidth="486.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
@@ -108,6 +110,19 @@
         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       </rowConstraints>
     </GridPane>
+    <AnchorPane layoutX="52.0" layoutY="82.0" prefHeight="142.0" prefWidth="374.0" styleClass="tab-content-area">
+      <children>
+        <AnchorPane layoutY="0.0" prefHeight="38.0" prefWidth="382.0" styleClass="time" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+          <children>
+            <Label alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="38.0" prefWidth="374.0" text="Friday, January 16, 2013" textFill="WHITE">
+              <font>
+                <Font name="Arial Bold" size="18.0" />
+              </font>
+            </Label>
+          </children>
+        </AnchorPane>
+      </children>
+    </AnchorPane>
   </children>
   <stylesheets>
     <URL value="@../style/mainscreen.css" />
